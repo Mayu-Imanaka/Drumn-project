@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import sound1 from '../assets/sounds/sound1.wav';
 import sound2 from '../assets/sounds/sound1.wav';
 import {set} from 'react-native-reanimated';
+import {View} from 'react-native';
 
 const Metronome = () => {
   const [playing, setPlaying] = useState(false);
@@ -48,9 +49,7 @@ const Metronome = () => {
     }
     setCount(count + 1) % setBeatsPerMeasure;
   };
-  return(
-      
-  );
+  return <View />;
 };
 
 export default Metronome;
